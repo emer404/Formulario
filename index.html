@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Iconos opcionales tipo terminal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+
+<form action="formulario45.php" method="get" class="hacker-form"> 
+
+    <div class="titulo">
+        <h1>Formato Formulario</h1>
+    </div>
+
+    <div class="contenedor">
+        <label for="nombre"><i class="fa-solid fa-user-secret icono"></i> Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Neo001" required>
+    </div>
+
+    <div class="contenedor">
+        <label for="contraseña"><i class="fa-solid fa-key icono"></i> Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Min. 8 caracteres" required>
+    </div>
+
+    <div class="contenedor">
+        <label for="genero"><i class="fa-solid fa-code icono"></i>Genero</label>
+        <select id="genero" name="genero" required>
+            <option value="" disabled selected>-- Elige alguna opción --</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </div>
+
+    <div class="contenedor checkbox">
+        <input type="checkbox" id="terminos" name="terminos" value="1" required>
+        <label for="terminos">Acepto los terminos y condiciones</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
